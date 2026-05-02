@@ -1,5 +1,4 @@
 ---
-​---
 title: "部署hugo-blog"
 date: 2026-05-02T18:14:36+08:00
 draft: false
@@ -10,7 +9,6 @@ author: xxj
 authorimage: ../assets/images/global/author.webp
 tags: ["General"]
 categories: ["Blog"]
-​---
 ---
 
 今天在cloudflare上成功部署了hugo blog。算是开启了现代化的blog之路。
