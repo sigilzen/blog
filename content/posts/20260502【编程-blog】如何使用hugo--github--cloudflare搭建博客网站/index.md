@@ -14,3 +14,5 @@ categories: ["Blog"]
 今天在cloudflare上成功部署了hugo blog。算是开启了现代化的blog之路。
 
 之前的typecho的文章慢慢迁移到这里吧。以后的blog发布，接入Hermes or openclaw，就更加的自动化了。
+
+![hugo-logo-wide](./assets/hugo-logo-wide.svg)
