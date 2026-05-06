@@ -1,34 +1,49 @@
+# 网站基础URL，即你的网站的根域名
 baseURL: "https://blog.allinone.us.kg/"
-title: TailBliss
-languageCode: en-us
+# 网站标题
+title: xxj的All in One
+# 默认语言代码，zh-cn代表简体中文
+languageCode: zh-cn
+# 使用的Hugo主题名称
 theme: tailbliss
-DefaultContentLanguage: en
+# 默认内容语言
+DefaultContentLanguage: zh-cn
+# 是否启用Emoji表情支持
 enableEmoji: true
+# 是否启用Git信息（如最后修改时间等，需要本地是一个git仓库）
 enableGitInfo: false
+# 是否生成robots.txt文件，用于告诉搜索引擎爬虫哪些页面可以抓取
 enableRobotsTXT: true
+# 是否将相对URL转换为绝对URL
 canonifyURLs: false
+# 分页配置
 pagination:
+  # 每页显示的文章数量
   pagerSize: 9
+# 暗黑模式的JS脚本配置
 darkmode_js:
   - assets/js/darkmode.js
+# 是否允许在Markdown中使用内联短代码 (Shortcodes)
 enableInlineShortcodes: true
 
+# Markdown解析器配置
 markup:
+  # 使用Goldmark作为Markdown解析器
   goldmark:
     extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      linkifyProtocol: https
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer:
+      definitionList: true # 启用定义列表
+      footnote: true       # 启用脚注
+      linkify: true        # 自动将URL转换为链接
+      linkifyProtocol: https # 自动链接使用的协议
+      strikethrough: true  # 启用删除线
+      table: true          # 启用表格
+      taskList: true       # 启用任务列表
+      typographer:         # 排版优化配置
         apostrophe: '&rsquo;'
-        disable: false
-        ellipsis: '&hellip;'
-        emDash: '&mdash;'
-        enDash: '&ndash;'
+        disable: false     # 是否禁用排版优化
+        ellipsis: '&hellip;' # 省略号
+        emDash: '&mdash;'  # 破折号
+        enDash: '&ndash;'  # 连接号
         leftAngleQuote: '&laquo;'
         leftDoubleQuote: '&ldquo;'
         leftSingleQuote: '&lsquo;'
@@ -37,38 +52,42 @@ markup:
         rightSingleQuote: '&rsquo;'
     parser:
       attribute:
-        block: false
-        title: true
-      autoHeadingID: true
-      autoHeadingIDType: github
-      wrapStandAloneImageWithinParagraph: true
+        block: false       # 是否允许块级属性
+        title: true        # 是否允许标题属性
+      autoHeadingID: true  # 自动为标题生成ID
+      autoHeadingIDType: github # 自动生成的ID格式，采用github风格
+      wrapStandAloneImageWithinParagraph: true # 是否将独立图片包裹在段落中
     renderer:
-      hardWraps: false
-      unsafe: true
-      xhtml: false
+      hardWraps: false     # 是否将Markdown中的换行转换为<br>
+      unsafe: true         # 是否允许在Markdown中直接使用HTML标签（设为true才支持内嵌HTML代码，如视频iframe等）
+      xhtml: false         # 是否渲染为XHTML
 
+# 主题自定义参数
 params:
-  author: Nusser Studios
-  authorimage: ../assets/images/global/author.webp
-  og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
-  disable_theme_toggle: false
-  disable_stay_uptodate: true
+  author: Nusser Studios # 作者名称
+  authorimage: ../assets/images/global/author.webp # 作者头像路径
+  og_image: /images/tailbliss-cover.png # Open Graph 默认分享图片，用于社交媒体卡片
+  moto: "Super Fast, and Flexible" # 网站座右铭/格言
+  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format." # 网站描述 (SEO)
+  disable_theme_toggle: false # 是否禁用右上角的 暗黑/白天 模式切换按钮
+  disable_stay_uptodate: true # 是否禁用“保持更新/邮件订阅”模块
 
+  # 页面模块1 (通常用于首页区块)
   p1:
-    heading: "Our mission"
-    image: "images/pages/our-mission.png"
-    content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+    heading: "我的使命" # 区块标题
+    image: "images/pages/our-mission.png" # 区块配图
+    content: # 区块文本内容段落
+      - text: "这里可以填写关于你博客的核心价值或个人简介。"
       - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
       - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
-  p2:
-    heading: "Just in time for Hacktoberfest with JIT Tailwind."
+  
+  # 页面模块2
+    p2:
+    heading: "技术栈与项目"
     image: "images/pages/hacktoberfest.jpg"
     content:
-      - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at purus non enim commodo tincidunt vel in nulla. Aenean pretium dolor non ultricies bibendum. Etiam quis blandit enim. Nunc condimentum ut lorem in faucibus. Phasellus varius ligula et commodo tristique. Nunc sodales nisl nec laoreet vehicula. Donec velit nibh, sollicitudin at nulla a, egestas dignissim eros. Sed lacinia hendrerit interdum. Vestibulum pellentesque sem venenatis nisl tempor accumsan sit amet tempus felis. Mauris leo diam, porttitor nec bibendum id, tempus ac nulla. Etiam congue ornare erat at convallis. Donec in nisi dapibus, mattis risus vel, imperdiet enim. Donec fermentum sit amet tortor nec tincidunt. Nam nec lectus tortor. Nunc sit amet laoreet orci, porta ornare massa. Phasellus eget lorem mi. Nam eleifend ultricies sapien, quis mollis leo bibendum at. Quisque viverra lorem sit amet magna aliquet, et dignissim arcu eleifend."
-      - type: "table"
+      - text: "这里支持多行文本叙述。"
+      - type: "table"                  # 支持在首页区块展示表格
         columns:
           - heading: "Column 1"
             items:
@@ -80,14 +99,16 @@ params:
               - "Bullet point 4"
               - "Bullet point 5"
               - "Bullet point 6"
+  
+  # 页面模块3 (合作伙伴/投资人区块)
   p3:
-    heading: "Backed by world-renowned investors"
+    heading: "合作伙伴或关注领域"
     content:
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
-    links:
+    links: # 链接按钮
       - text: Meet our investors and advisors
         url: "#"
-    logos:
+    logos: # Logo列表
       - identifier: a
         image: "images/global/sample-logo.svg"
         alt: "a"
@@ -96,23 +117,30 @@ params:
       - identifier: d
       - identifier: e
       - identifier: f
+  
+  # 页面模块4 (博客文章展示区块)
   p4:
     heading: "From the blog"
     content:
       - text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed."
+  
+  # 页面模块5 (邮件订阅区块)
   p5:
     heading: "Stay Up to Date"
     content:
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-    action: "#"
-    label: "Email address"
-    placeholder: "Enter your email"
-    button: "Notify me"
+    action: "#" # 提交表单的地址
+    label: "Email address" # 输入框标签
+    placeholder: "Enter your email" # 输入框占位符
+    button: "Notify me" # 按钮文本
 
+  # ------------------------------------------
+  # 社交媒体链接
+  # ------------------------------------------
   social_media:
     github:
-      enabled: true
-      url: 'https://github.com/nusserstudios'
+      enabled: true # 是否显示
+      url: 'https://github.com/SigilZen' # 你的Github主页链接
     facebook:
       enabled: true
       url: 'https://facebook.com/nusserstudios'
@@ -123,29 +151,35 @@ params:
       enabled: true
       url: 'https://twitter.com/nusserstudios'
     
-
+# ==========================================
+# 导航菜单配置
+# ==========================================
+# 菜单配置
 menu:
+  # 主导航菜单 (顶部)
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
-      weight: 10
+    - identifier: prose # 唯一标识符
+      name: Prose # 菜单显示名称
+      url: /prose/ # 链接地址
+      weight: 10 # 权重，决定排序，数字越小越靠前
     - identifier: about
       name: About
       url: /about/
       weight: 20
     - identifier: categories
-      pre: dropdown
+      pre: dropdown # 前置属性，在这里主题用来判断并渲染为下拉菜单
       name: Categories
       weight: 30
     - identifier: dropdown
-      pre: complexdropdown
+      pre: complexdropdown # 渲染为复杂的图文下拉菜单
       name: Dropdown
       weight: 40
     - identifier: contact
       name: Contact
       url: /contact/
       weight: 50
+  
+  # 普通分类菜单 (作为 Categories 的下拉子菜单内容)
   categories:
     - identifier: prose
       name: Prose
@@ -155,25 +189,29 @@ menu:
       name: About
       url: /about/
       weight: 20
+  
+  # 复杂的下拉菜单项 (作为 Dropdown 的下拉内容)
   dropdown:
     - identifier: appearance
-      pre: stars # can be stars, comments or piechart
+      pre: stars # 图标类型：可以是 stars, comments 或 piechart
       name: Appearance
-      post: "Easy customization"
+      post: "Easy customization" # 副标题或描述文字
       url: "#"
       weight: 10
     - identifier: comments
-      pre: comments # can be stars, comments or piechart
+      pre: comments
       name: Comments
       post: "Check your latest comments"
       url: "#"
       weight: 20
     - identifier: analytics
-      pre: piechart # can be stars, comments or piechart
+      pre: piechart
       name: Analytics
       post: "Take a look at your statistics"
       url: "#"
       weight: 30
+  
+  # 页脚菜单
   footer:
     - identifier: about
       name: About
@@ -196,21 +234,23 @@ menu:
       url: /contact/
       weight: 50
 
+# 分类法配置
 taxonomies:
-  category: Categories
-  tag: Tags
+  category: Categories # 对应Hugo生成分类路由 /categories
+  tag: Tags # 对应Hugo生成标签路由 /tags
 
+# 第三方服务隐私与追踪配置
 privacy:
   disqus:
-    disable: false
+    disable: false # 是否禁用Disqus评论系统
   googleAnalytics:
-    anonymizeIP: true
-    disable: false
-    respectDoNotTrack: false
-    useSessionStorage: false
+    anonymizeIP: true # 是否对IP进行匿名化处理
+    disable: false # 是否禁用Google Analytics
+    respectDoNotTrack: false # 是否尊重浏览器的Do Not Track请求
+    useSessionStorage: false # 是否使用Session Storage代替Cookie
   instagram:
     disable: false
-    simple: false
+    simple: false # 是否使用简易模式（不加载JS）
   twitter:
     disable: false
     enableDNT: false
@@ -221,9 +261,10 @@ privacy:
     simple: false
   youtube:
     disable: false
-    privacyEnhanced: true
+    privacyEnhanced: true # 是否开启YouTube隐私增强模式 (youtube-nocookie.com)
 
+# Hugo模块与版本要求
 module:
   hugoVersion:
-    extended: true
-    min: "0.148.2"
+    extended: true # 要求使用Hugo Extended版本 (通常TailwindCSS等需要它)
+    min: "0.148.2" # 要求的Hugo最低版本号
