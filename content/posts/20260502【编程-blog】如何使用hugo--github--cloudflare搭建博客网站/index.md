@@ -16,6 +16,7 @@ categories: ["Blog"]
 之前的typecho的文章慢慢迁移到这里吧。以后的blog发布，接入Hermes or openclaw，就更加的自动化了。
 
 > 在macbookpro上尝试，安装hugo，并通过github部署到cloudflare上
+![cover](./assets/cover.jpg)
 
 ## 一、 在macbookpro上安装hugo
 
