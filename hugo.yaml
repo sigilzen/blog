@@ -83,16 +83,14 @@ params:
       - text: "丈量代码的轨迹，"
       - text: "雕琢生命的质感。"
   
-  # 页面模块2
+  # 页面模块2 
   p2:
     heading: "精雕细琢"
     image: "images/pages/diaoke.png"
     content:
       - text: "匠人精神，精益求精!"
-      - text: "命理探本源，"
-      - text: "编程筑骨架，"
-      - text: "量化添利刃，"
-      - text: "雕刻精气神。"
+      - text: "命理探本源，编程筑骨架，"
+      - text: "量化添利刃，雕刻精气神。"
       - type: "table"                  # 支持在首页区块展示表格
         columns:
           - heading: "Column 1"
