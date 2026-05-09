@@ -75,12 +75,13 @@ params:
 
   # 页面模块1 (通常用于首页区块) 
   p1:
-    heading: "我来填尔一峰青" # 区块标题
+    heading: "偶来填尔一峰青" # 区块标题
     image: "images/pages/earth-china-nasa.jpg" # 区块配图
     content: # 区块文本内容段落
-      - text: "探索语言的边界，追寻思想的轨迹，丈量代码的深度，雕琢生命的质感。"
-      - text: ""
-      - text: ""
+      - text: "探索AI的边界，"
+      - text: "追寻思想的脉络，"
+      - text: "丈量代码的轨迹，"
+      - text: "雕琢生命的质感。"
   
   # 页面模块2
   p2:
@@ -88,8 +89,10 @@ params:
     image: "images/pages/diaoke.png"
     content:
       - text: "匠人精神，精益求精!"
-      - text: ""
-      - text: "四轮驱动，驱动人生：命理探本源，编程筑骨架，量化添利刃，雕刻精气神。"
+      - text: "命理探本源，"
+      - text: "编程筑骨架，"
+      - text: "量化添利刃，"
+      - text: "雕刻精气神。"
       - type: "table"                  # 支持在首页区块展示表格
         columns:
           - heading: "Column 1"
@@ -105,11 +108,12 @@ params:
   
   # 页面模块3 (合作伙伴/投资人区块)
   p3:
-    heading: "合作伙伴或关注领域"
+    heading: "志同道合"
     content:
-      - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
+      - text: "欢迎关注我的朋友们。"
+      - text: "让我们携手共同来探索！"
     links: # 链接按钮
-      - text: Meet our investors and advisors
+      - text: 合作
         url: "#"
     logos: # Logo列表
       - identifier: a
@@ -166,9 +170,21 @@ menu:
       url: /categories/blog/ # 链接地址
       weight: 5 # 权重，决定排序，数字越小越靠前
     - identifier: prose # 唯一标识符
-      name: Prose # 菜单显示名称
-      url: /prose/ # 链接地址
-      weight: 10 # 权重，决定排序，数字越小越靠前
+      name: 命理 # 菜单显示名称
+      url: /destiny/ # 链接地址
+      weight: 6 # 权重，决定排序，数字越小越靠前
+    - identifier: programing # 唯一标识符
+      name: 编程 # 菜单显示名称
+      url: /programing/ # 链接地址
+      weight: 7 # 权重，决定排序，数字越小越靠前
+    - identifier: sculpture # 唯一标识符
+      name: 雕刻 # 菜单显示名称
+      url: /sculpture/ # 链接地址
+      weight: 8 # 权重，决定排序，数字越小越靠前
+    - identifier: stocks # 唯一标识符
+      name: 股票 # 菜单显示名称
+      url: /stocks/ # 链接地址
+      weight: 9 # 权重，决定排序，数字越小越靠前
     - identifier: about
       name: About
       url: /about/
