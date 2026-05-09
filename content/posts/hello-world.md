@@ -2,6 +2,7 @@
 title: "Hello World"
 date: 2026-05-02T10:00:00+08:00
 draft: false
+featured_image: ../assets/images/featured/featured-img-placeholder.png
 tags: ["日记"]
 categories: ["Blog"]
 ---
