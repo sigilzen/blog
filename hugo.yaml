@@ -1,7 +1,7 @@
 # 网站基础URL，即你的网站的根域名
 baseURL: "https://blog.allinone.us.kg/"
 # 网站标题
-title: 星X箭的All in One
+title: 星&舰 Blog
 # 默认语言代码，zh-cn代表简体中文
 languageCode: zh-cn
 # 使用的Hugo主题名称
@@ -60,11 +60,11 @@ markup:
     renderer:
       hardWraps: false     # 是否将Markdown中的换行转换为<br>
       unsafe: true         # 是否允许在Markdown中直接使用HTML标签（设为true才支持内嵌HTML代码，如视频iframe等）
-      xhtml: false         # 是否渲染为XHTML
+      xhtml: false         # 是否渲染为XHTML 
 
 # 主题自定义参数
 params:
-  author: 星X箭 # 作者名称
+  author: 星&舰 # 作者名称
   authorimage: ../assets/images/global/author.webp # 作者头像路径 
   og_image: "images/pages/RocketStart.png" # Open Graph 默认分享图片，用于社交媒体卡片
   image: "images/pages/RocketStart.png" # 手工添加的图片

@@ -2,6 +2,8 @@
 title: "构建现代 AI 量化交易工作框架" 
 date: 2026-05-11 
 author: xxj
+summary: 在AI时代，我们应该如何构建一个"现代化"的基于中国A股的量化回测框架？ 
+featured_image: ../assets/images/featured/trading_image_2.png
 categories: ["blog"] 
 tags: ["技术框架", "QMT", "量化", "AI"] 
 draft: false
