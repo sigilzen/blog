@@ -1,6 +1,6 @@
 ---
 title: "【blog】中国大模型能在 2027 年一季度赶上 Mythos 吗？"
-date: 2026-06-25T10:52:13
+date: 2026-06-24
 author: xxj
 summary: "最近 Cursor、Grok、Fable、Mythos、GPT-5.5、Claude Opus 4.8 这些名字被放到一起讨论，本质上是在讨论一个更大的问题：中国大模型到底是在追赶上一代模型，还是已经逼近最前沿闭源模型？
 我的猜测：到 2026 年底，赶不上 Mythos；到 2027 年一季度，也赶不上 Mythos。
@@ -9,15 +9,13 @@ featured_image: ../assets/images/featured/trading_image_2.png
 categories: ["blog"]
 tags: ["AI"]
 draft: false
-
-
 ---
 
-# 中国大模型能在 2027 年一季度赶上 Mythos 吗？我的结论：赶不上，但会赶上 GPT-5.5 / Opus 4.8
+# 中国大模型能在 2027 年一季度赶上 Mythos 吗？我的猜测是：赶不上，但会赶上 GPT-5.5 / Opus 4.8
 
 最近 Cursor、Grok、Fable、Mythos、GPT-5.5、Claude Opus 4.8 这些名字被放到一起讨论，本质上是在讨论一个更大的问题：中国大模型到底是在追赶上一代模型，还是已经逼近最前沿闭源模型？
 
-我的结论非常明确：**到 2026 年底，赶不上 Mythos；到 2027 年一季度，也赶不上 Mythos。**
+我的猜测非常明确：**到 2026 年底，赶不上 Mythos；到 2027 年一季度，也赶不上 Mythos。**
 
 但另一个结论同样明确：**到 2027 年一季度，中国头部大模型大概率可以达到 GPT-5.5 / Claude Opus 4.8 这一档的实际生产水平。**
 
