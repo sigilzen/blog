@@ -1,0 +1,14 @@
+# Local dependencies and generated files
+node_modules/
+public/
+resources/_gen/
+.hugo_build.lock
+.DS_Store
+.env
+.env.*
+!.env.example
+.dev.vars
+.wrangler/
+.local-tools/
+static/css/main.*.css
+static/css/.vite/
