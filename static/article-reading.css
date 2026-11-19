@@ -1,0 +1,33 @@
+.article-body.prose {
+  max-width: 64rem;
+  font-size: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.article-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  overflow-wrap: anywhere;
+}
+
+.article-body.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 0.95em;
+}
+
+.article-body.prose img,
+.article-body.prose iframe {
+  max-width: 100%;
+}
+
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  #menuItems > a,
+  #menuItems > div > button {
+    margin-left: 0;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    white-space: nowrap;
+  }
+}
