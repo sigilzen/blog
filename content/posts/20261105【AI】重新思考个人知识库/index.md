@@ -9,8 +9,6 @@ featured_image: images/featured/personal-knowledge-ai.png
 draft: false
 ---
 
-![人以自己的判断为指南，与 AI 一同整理知识](/images/personal-knowledge-ai.png)
-
 我原本想搭建一个个人 Wiki，把工作资料、读书笔记和生活中的信息整理成相互关联的知识。但越想越觉得，自己真正需要的，也许不是一套 Wiki 软件。
 
 我有大量分散在文件夹中的文档、照片和视频，希望在 Mac、Windows 和手机上使用它们，也希望 AI 能找到资料、理解其中的关系，并在需要时回答问题。沿着这个需求往下追问，知识库的形状逐渐清晰起来。

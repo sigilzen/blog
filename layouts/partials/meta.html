@@ -1,0 +1,23 @@
+<title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ .Title }}
+    {{else}} {{ .Title }} | {{ .Site.Title }} {{end}}
+</title>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:description"
+      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="en">
+{{- $imagePath := .Params.featured_image | default .Site.Params.og_image -}}
+{{- $imageRelativeURL := $imagePath | relURL -}}
+{{- $imageAbsoluteURL := $imagePath | absURL -}}
+{{- with resources.Get $imagePath -}}
+    {{- $imageRelativeURL = .RelPermalink -}}
+    {{- $imageAbsoluteURL = .Permalink -}}
+{{- end }}
+<meta property="og:image" content="{{ $imageRelativeURL }}" />
+<meta property="og:image:secure_url" content="{{ $imageAbsoluteURL }}" />
+<meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
